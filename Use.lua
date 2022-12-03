@@ -3,14 +3,19 @@
 --Idea from TikTok
 
 --[SETTINGS]--
-_G.TargetUsername = "dtbbullet"
-_G.PlayerThatWillActAsTarget = "KrypticGioo"
+_G.TargetUsername = ""
+_G.PlayerThatWillActAsTarget = ""
 
-_G.TargetIsStar = false
+_G.TargetIsStar = true
 _G.TargetIsStarCreator = false
-_G.TargetIsAdmin = true
+_G.TargetIsAdmin = false
 
 --[DO NOT TOUCH]--
+local Players = game:GetService("Players")
+local TargetPaste = Players:FindFirstChild(_G.PlayerThatWillActAsTarget)
+local TargetPasteChar = TargetPaste.Character
+local TargetHumanoid = TargetPasteChar:WaitForChild("Humanoid")
+
 if _G.TargetIsStar == true then
 	TargetHumanoid.DisplayName = "[⭐]".._G.TargetUsername
 elseif _G.TargetIsStarCreator == true then
