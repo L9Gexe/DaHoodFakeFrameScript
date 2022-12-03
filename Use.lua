@@ -6,7 +6,7 @@
 _G.TargetUsername = ""
 _G.PlayerThatWillActAsTarget = ""
 
-_G.TargetIsStar = true
+_G.TargetIsStar = false
 _G.TargetIsStarCreator = false
 _G.TargetIsAdmin = false
 
